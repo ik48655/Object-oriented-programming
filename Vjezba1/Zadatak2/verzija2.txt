@@ -1,0 +1,31 @@
+/*void add(matrix inpmat, matrix randmat, matrix* add) // Funkcija za zbrajanje
+{
+	int m = randmat.row;
+	int n = randmat.col;
+
+	add->row = m;
+	add->col = n;
+	add->mat = new float* [m];
+	for (int e = 0; e < m; e++)
+		add->mat[e] = new float[n];
+	for (int i = 0; i < inpmat.row; i++)
+	{
+		for (int j = 0; j < inpmat.col; j++)
+			add->mat[i][j] = inpmat.mat[i][j] + randmat.mat[i][j]; //Clanove unesene (inpmat) i generirane (randmat) s istim koordinatama [i][j] zbrajamo
+	}
+}
+void subtract(matrix inpmat, matrix randmat, matrix* sub)
+{
+	int m = randmat.row;
+	int n = randmat.col;
+	sub->row = m;
+	sub->col = n;
+	sub->mat = new float* [m];
+	for (int e = 0; e < m; e++)
+		sub->mat[e] = new float[n];
+	for (int i = 0; i < inpmat.row; i++)
+	{
+		for (int j = 0; j < inpmat.col; j++)
+			sub->mat[i][j] = inpmat.mat[i][j] - randmat.mat[i][j]; //Clanove unesene (inpmat) i generirane (randmat) s istim koordinatama [i][j] oduzimamo
+	}
+}*/

@@ -1,0 +1,4 @@
+﻿  Zadatak2.cpp
+C:\Users\User\Desktop\2 god 3 sem\objektno orijentirano programiranje\Vjezba1\Zadatak2\Zadatak2.cpp(48,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Desktop\2 god 3 sem\objektno orijentirano programiranje\Vjezba1\Zadatak2\Zadatak2.cpp(50,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Zadatak2.vcxproj -> C:\Users\User\Desktop\2 god 3 sem\objektno orijentirano programiranje\Vjezba1\Debug\Zadatak2.exe
