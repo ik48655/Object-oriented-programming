@@ -1,21 +1,36 @@
 #include<iostream>
 using namespace std;
-struct point
+struct point // Struktura za tocku u koordinatnom sustavu
 {
 	int x, y;
 };
-struct rectangle
+struct rectangle // Struktura pravokutnik s donjim lijevim i gornjim desnim tockama
 {
 	point dl;
 	point ur;
 
-};
-struct circle
-{
-	unsigned r;
-	int x, y;
+	rectangle* newRect(int N) // Funkcija za unos novog pravokutnika u niz
+	{
+		rectangle* pravokut = new rectangle[N]; // Alociranje memorije za pravokutnike
 
-	void newCir()
+		for (int i = 0; i < N; i++) // Dok god je i manje od unesenog broja pravokutnika, unosimo pravokutnike
+		{
+			cout << "[" << i+1 << "]" << "Enter coordinates for down left point: " << endl; // X i Y koordinate donjeg lijevog kantuna
+			cin >> pravokut[i].dl.x;
+			cin >> pravokut[i].dl.y;
+			cout << "[" << i+1 << "]" << "Enter coordinates for upper right point: " << endl; // X i Y koordinate gornjeg desnog kantuna
+			cin >> pravokut[i].ur.x;
+			cin >> pravokut[i].ur.y;
+		}
+		return pravokut;
+	}
+};
+struct circle // Struktura kruznica
+{
+	unsigned r; // Promjer
+	int x, y; // Koordinate sredista
+
+	void newCir() // Funkcija za unos kruznice
 	{
 		cout << "Enter radius and coordinates of center: " << endl;
 		cin >> r;
@@ -23,26 +38,12 @@ struct circle
 		cin >> y;
 	}
 };
-rectangle* newRect(int N)
-{
-	rectangle* pravokut = new rectangle[N];
 
-	for (int i = 0; i < N; i++)
-	{
-		cout << "Enter coordinates for down left point: " << endl;
-		cin >> pravokut[i].dl.x;
-		cin >> pravokut[i].dl.y;
-		cout << "Enter coordinates for upper right point: " << endl;
-		cin >> pravokut[i].ur.x;
-		cin >> pravokut[i].ur.y;
-	}
-	return pravokut;
-}
-bool rectinters(int dlY, int dlX, int urX, int urY, int cX, int cY, int cR)
+bool rectinters(int dlY, int dlX, int urX, int urY, int cX, int cY, int cR) // Presjek pravokutnika s kruznicom
 {
 	int nearX = max(dlX, min(urX, cX));
 	int nearY = max(dlY, min(urY, cY));
-	if (((nearX - cX) * (nearX - cX) + (nearY - cY) * (nearY - cY)) <= cR * cR)
+	if (((nearX - cX) * (nearX - cX) + (nearY - cY) * (nearY - cY)) <= cR * cR) //
 		return true;
 	return false;
 }
@@ -58,16 +59,18 @@ int intersnum(const rectangle* (&rectangle), const circle &cir,int N)
 }
 int main()
 {
-	circle cir;
-	const rectangle* rectangle;
-	int N;
-	cout << "Enter number of rectangles: \n" << endl;
+	circle cir; // Kruznica
+	const rectangle* nizprvkt; // Niz pravokutnika
+	rectangle prvkt; // Pravokutnik
+
+	int N; // Broj pravokutnika
+	cout << "Enter number of rectangles: \n";
 	cin >> N;
 
-	cir.newCir();
-	rectangle = newRect(N);
+	cir.newCir(); // Unos kruznice
+	nizprvkt= prvkt.newRect(N); // Unos pravokutnika u niz
 
-	cout << numOfInter(rectangle, cir, N);
-	delete[] rectangle;
+	cout << "Number of rectangles intersecting with circle is: " << intersnum(nizprvkt, cir, N); // Ispis broja pravokutnika koji sjeku kruznicu
+	delete[] nizprvkt;
 	return 0;
 }
