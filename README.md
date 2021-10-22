@@ -1,3 +1,3 @@
 Problem exercises
 
-Subject: Object oriented programming
+Subject: Object-oriented programming
