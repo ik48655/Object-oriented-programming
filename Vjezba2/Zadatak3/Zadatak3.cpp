@@ -27,7 +27,7 @@ struct rectangle // Struktura pravokutnik s donjim lijevim i gornjim desnim tock
 };
 struct circle // Struktura kruznica
 {
-	unsigned r; // Promjer
+	unsigned r; // Polumjer odnosno radius
 	int x, y; // Koordinate sredista
 
 	void newCir() // Funkcija za unos kruznice
@@ -41,18 +41,18 @@ struct circle // Struktura kruznica
 
 bool rectinters(int dlY, int dlX, int urX, int urY, int cX, int cY, int cR) // Presjek pravokutnika s kruznicom
 {
-	int nearX = max(dlX, min(urX, cX));
-	int nearY = max(dlY, min(urY, cY));
-	if (((nearX - cX) * (nearX - cX) + (nearY - cY) * (nearY - cY)) <= cR * cR) //
+	int nearX = max(dlX, min(urX, cX)); // Trazimo koordinatu X koja je najbliza koordinati X sredista kruznice
+	int nearY = max(dlY, min(urY, cY)); // Trazimo koordinatu Y koja je najbliza koordinati X sredista kruznice
+	if (((nearX - cX) * (nearX - cX) + (nearY - cY) * (nearY - cY)) <= cR * cR) // Formula za presjek kruznice s pravokutnicima
 		return true;
 	return false;
 }
-int intersnum(const rectangle* (&rectangle), const circle &cir,int N)
+int intersnum(const rectangle* (&rectangle), const circle &cir,int N) // Funkcija koja broji broj presjeka na osnovu bool vrijednosti 
 {
 	int cnt = 0;
 	for (int i = 0; i < N; i++)
 	{
-		if (rectinters(rectangle[i].dl.y, rectangle[i].dl.x, rectangle[i].ur.x, rectangle[i].ur.y, cir.x, cir.y, cir.r))
+		if (rectinters(rectangle[i].dl.y, rectangle[i].dl.x, rectangle[i].ur.x, rectangle[i].ur.y, cir.x, cir.y, cir.r)) // Na osnovu true ili false se brojac povecava
 			cnt++;
 	}
 	return cnt;

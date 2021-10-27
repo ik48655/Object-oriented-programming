@@ -2,4 +2,5 @@
   vector.cpp
 C:\Users\User\Desktop\2 god 3 sem\objektno orijentirano programiranje\OOP VJEZBE\Vjezba2\Zadatak4\vector.cpp(19,27): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
+  LINK : C:\Users\User\Desktop\2 god 3 sem\objektno orijentirano programiranje\OOP VJEZBE\Vjezba2\Debug\Zadatak4.exe not found or not built by the last incremental link; performing full link
   Zadatak4.vcxproj -> C:\Users\User\Desktop\2 god 3 sem\objektno orijentirano programiranje\OOP VJEZBE\Vjezba2\Debug\Zadatak4.exe
