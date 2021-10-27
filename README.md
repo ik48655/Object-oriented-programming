@@ -1,3 +1,3 @@
-- 👋 Hi, I’m @ik48655
-- 👀 SteamID : blackb0schko
+Problem exercises
 
+Subject: Object-oriented programming
