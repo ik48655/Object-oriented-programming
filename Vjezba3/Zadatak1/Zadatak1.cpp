@@ -27,6 +27,8 @@ int main()
 	cout << "Unesite clanove niza." << endl;
 	vctinp2(vc2, a, b);
 
+	vel2 = vc2.size();
+
 	cout << "Prvi niz: " << endl;
 	vctprint(vc1);
 	cout << "Drugi niz: " << endl;
