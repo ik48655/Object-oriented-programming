@@ -2,15 +2,16 @@
 #include <string>
 using namespace std;
 
-int cntStrInStr(string str, string substr) {
-    int count = 0;
-    size_t nPos = str.find(substr);
-    while (nPos != string::npos)
+int cntStrInStr(string str, string substr)
+{
+    int count = 0; // Counter is set to zero
+    size_t nPos = str.find(substr); // First apperenace of substring
+    while (nPos != string::npos) // If not end of string
     {
-        count++;
+        count++; // Counter is increased by one
         nPos = str.find(substr, nPos + 1);
     }
-    return count;
+    return count; // Counter is returned
 }
 int main()
 {
