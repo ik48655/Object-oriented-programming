@@ -1,3 +1,8 @@
-Problem exercises
+# Object-oriented-programming
+Problem exercises in C++
 
-Subject: Object-oriented programming
+Year II.
+
+Semester III.
+
+
