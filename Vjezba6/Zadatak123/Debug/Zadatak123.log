@@ -1,0 +1,7 @@
+﻿  HangmanController.cpp
+  HangmanModel.cpp
+  HangmanView.cpp
+  main.cpp
+C:\Users\User\source\repos\Vjezba6\Zadatak123\main.cpp(12,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Zadatak123.vcxproj -> C:\Users\User\source\repos\Vjezba6\Debug\Zadatak123.exe

@@ -1,7 +1,8 @@
-
-#include <iostream>
-
+#include<iostream>
+#include "header.h"
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    matchsticks();
+    return 0;
 }
