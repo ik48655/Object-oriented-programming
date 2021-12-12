@@ -1,0 +1,6 @@
+﻿  Zadatak5.cpp
+C:\Users\User\source\repos\VjezbanjeStringovi\Zadatak5\Zadatak5.cpp(11,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\source\repos\VjezbanjeStringovi\Zadatak5\Zadatak5.cpp(21,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\source\repos\VjezbanjeStringovi\Zadatak5\Zadatak5.cpp(51,6): warning C4551: function call missing argument list
+C:\Users\User\source\repos\VjezbanjeStringovi\Zadatak5\Zadatak5.cpp(39): warning C4715: 'prosjvr': not all control paths return a value
+  Zadatak5.vcxproj -> C:\Users\User\source\repos\VjezbanjeStringovi\Debug\Zadatak5.exe

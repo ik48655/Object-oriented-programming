@@ -1,0 +1,2 @@
+/*Napisati funkciju koja za niz cijelih brojeva vraca adresu najveceg negativnog
+broja u nizu.*/

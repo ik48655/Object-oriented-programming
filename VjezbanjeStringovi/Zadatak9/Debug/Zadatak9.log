@@ -1,0 +1,3 @@
+﻿  Zadatak9.cpp
+C:\Users\User\source\repos\VjezbanjeStringovi\Zadatak9\Zadatak9.cpp(11,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Zadatak9.vcxproj -> C:\Users\User\source\repos\VjezbanjeStringovi\Debug\Zadatak9.exe

@@ -1,0 +1,6 @@
+﻿  Zadatak20.cpp
+  The contents of <string_view> are available only with C++17 or later.
+C:\Users\User\Desktop\2 god 3 sem\objektno programiranje\OOP VJEZBE\VjezbanjeVektori\Zadatak20\Zadatak20.cpp(12,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\Desktop\2 god 3 sem\objektno programiranje\OOP VJEZBE\VjezbanjeVektori\Zadatak20\Zadatak20.cpp(14,36): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\User\Desktop\2 god 3 sem\objektno programiranje\OOP VJEZBE\VjezbanjeVektori\Zadatak20\Zadatak20.cpp(18,34): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  Zadatak20.vcxproj -> C:\Users\User\Desktop\2 god 3 sem\objektno programiranje\OOP VJEZBE\VjezbanjeVektori\Debug\Zadatak20.exe

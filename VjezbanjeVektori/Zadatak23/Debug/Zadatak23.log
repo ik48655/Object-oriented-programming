@@ -1,0 +1,5 @@
+﻿  Zadatak23.cpp
+  The contents of <string_view> are available only with C++17 or later.
+C:\Users\User\Desktop\2 god 3 sem\objektno programiranje\OOP VJEZBE\VjezbanjeVektori\Zadatak23\Zadatak23.cpp(18,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\Desktop\2 god 3 sem\objektno programiranje\OOP VJEZBE\VjezbanjeVektori\Zadatak23\Zadatak23.cpp(35,20): warning C4018: '<': signed/unsigned mismatch
+  Zadatak23.vcxproj -> C:\Users\User\Desktop\2 god 3 sem\objektno programiranje\OOP VJEZBE\VjezbanjeVektori\Debug\Zadatak23.exe
