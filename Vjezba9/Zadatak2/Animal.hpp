@@ -17,17 +17,6 @@ public:
 	Insect() {};
 };
 
-class Mosquito : public Insect {
-private:
-	int legs;
-	string species;
-public:
-	Mosquito();
-	int getLegs();
-	string getSpecies();
-	~Mosquito();
-};
-
 class Cockroach : public Insect {
 private:
 	int legs;
@@ -55,17 +44,6 @@ public:
 	~Eagle();
 };
 
-class Parrot : public Bird {
-private:
-	int legs;
-	string species;
-public:
-	Parrot();
-	int getLegs();
-	string getSpecies();
-	~Parrot();
-};
-
 class Spider : public Animal {
 public:
 	Spider() {};
@@ -80,17 +58,6 @@ public:
 	int getLegs();
 	string getSpecies();
 	~Tarantula();
-};
-
-class BlackWidow : public Spider {
-private:
-	int legs;
-	string species;
-public:
-	BlackWidow();
-	int getLegs();
-	string getSpecies();
-	~BlackWidow();
 };
 
 #endif

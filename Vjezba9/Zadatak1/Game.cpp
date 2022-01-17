@@ -1,28 +1,28 @@
 #include "Game.hpp"
 
-bool Game::isGameOver(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu) {
+bool Game::GameOver(vector<HPlayer>& pl, vector<CPlayer>& cpu) {
 	for (int i = 0; i < npl; ++i) {
-		if (pl[i].getScore() >= goal)
+		if (pl[i].Scoregetter() >= goal)
 			return true;
 	}
 	for (int i = 0; i < ncpu; ++i) {
-		if (cpu[i].getScore() >= goal)
+		if (cpu[i].Scoregetter() >= goal)
 			return true;
 	}
 	return false;
 }
 
-void Game::winner(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu) {
+void Game::Winner(vector<HPlayer>& pl, vector<CPlayer>& cpu) {
 	int max = 0, ind;
 	for (int i = 0; i < npl; ++i) {
-		if (pl[i].getScore() > max) {
-			max = pl[i].getScore();
+		if (pl[i].Scoregetter() > max) {
+			max = pl[i].Scoregetter();
 			ind = i;
 		}
 	}
 	for (int i = 0; i < ncpu; ++i) {
-		if (cpu[i].getScore() > max) {
-			max = cpu[i].getScore();
+		if (cpu[i].Scoregetter() > max) {
+			max = cpu[i].Scoregetter();
 			ind = i + npl;
 		}
 	}
@@ -30,61 +30,61 @@ void Game::winner(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu) {
 	cout << "Player " << ind + 1 << " won!";
 }
 
-void Game::round(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu) {
+void Game::round(vector<HPlayer>& pl, vector<CPlayer>& cpu) {
 	int hand1, guess1; 
 	for (int i = 0; i < npl; ++i) {
-		pl[i].chooseHand(i);
+		pl[i].plHand(i);
 	}
 	for (int i = 0; i < ncpu; ++i) {
-		cpu[i].generateHand(i + npl);
+		cpu[i].cpHand(i + npl);
 	}
 	for (int i = 0; i < npl; ++i) {
-		pl[i].guessHand(i);
-		guess1 = pl[i].getGuess();
+		pl[i].plGuess(i);
+		guess1 = pl[i].Guessgetter();
 		for (int j = 0; j < npl; ++j) {
 			if (j == i)
 				continue;
-			hand1 = pl[j].getHand();
+			hand1 = pl[j].Handgetter();
 			if (guess1 == hand1)
 				pl[i].incrScore();
 		}
 		for (int j = 0; j < ncpu; ++j) {
-			hand1 = cpu[j].getHand();
+			hand1 = cpu[j].Handgetter();
 			if (guess1 == hand1)
 				pl[i].incrScore();
 		}
 	}
 	for (int i = 0; i < ncpu; ++i) {
-		cpu[i].generateGuess(i + npl);
-		guess1 = cpu[i].getGuess();
+		cpu[i].cpGuess(i + npl);
+		guess1 = cpu[i].Guessgetter();
 		for (int j = 0; j < npl; ++j) {
-			hand1 = pl[j].getHand();
+			hand1 = pl[j].Handgetter();
 			if (guess1 == hand1)
 				cpu[i].incrScore();
 		}
 		for (int j = 0; j < ncpu; ++j) {
 			if (j == i)
 				continue;
-			hand1 = cpu[j].getHand();
+			hand1 = cpu[j].Handgetter();
 			if (guess1 == hand1)
 				cpu[i].incrScore();
 		}
 	}
 	for (int i = 0; i < npl; ++i) {
-		pl[i].setGuess(0);
-		pl[i].setHand(0);
+		pl[i].Guesssetter(0);
+		pl[i].Handsetter(0);
 	}
 }
 
-void Game::scoreboard(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu) {
+void Game::scoreboard(vector<HPlayer>& pl, vector<CPlayer>& cpu) {
 	system("cls");
 	int score1, total = ncpu + npl;
 	for (int i = 0; i < npl; ++i) {
-		score1 = pl[i].getScore();
+		score1 = pl[i].Scoregetter();
 		cout << "P" << i + 1 << " " << score1 << "/" << goal << endl;
 	}
 	for (int i = 0; i < ncpu; ++i) {
-		score1 = cpu[i].getScore();
+		score1 = cpu[i].Scoregetter();
 		cout << "P" << npl + i + 1 << " " << score1 << "/" << goal << endl;
 	}
 	Sleep(2000);

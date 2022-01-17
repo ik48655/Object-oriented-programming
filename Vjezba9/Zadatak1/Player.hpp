@@ -18,27 +18,26 @@ public:
 		guess = 0;
 		score = 0;
 	}
-	int getHand();
-	int getGuess();
-	int getScore();
-	void setHand(int a);
-	void setGuess(int a);
-	void setScore(int a);
+	int Handgetter();
+	int Guessgetter();
+	int Scoregetter();
+	void Handsetter(int a);
+	void Guesssetter(int a);
+	void Scoresetter(int a);
 	void incrScore();
 };
 
-class HumanPlayer : public Player {
+class CPlayer : public Player {
 private:
 public:
-	void chooseHand(int a);
-	void guessHand(int a);
+	void cpHand(int a);
+	void cpGuess(int a);
 };
 
-class ComputerPlayer : public Player {
+class HPlayer : public Player {
 private:
 public:
-	void generateHand(int a);
-	void generateGuess(int a);
+	void plHand(int a);
+	void plGuess(int a);
 };
-
 #endif

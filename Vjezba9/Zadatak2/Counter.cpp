@@ -1,6 +1,6 @@
 #include "Counter.hpp"
 
-void Counter::getSum(vector<Animal*>& a){
+void Counter::SumLegs(vector<Animal*>& a){
 	int len = a.size();
 	for (int i = 0; i < len; ++i) {
 		cout << "Animal added: " << a[i]->getSpecies() << endl;

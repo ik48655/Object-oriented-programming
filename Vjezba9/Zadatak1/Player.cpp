@@ -1,26 +1,26 @@
 #include "Player.hpp"
 
-int Player::getHand() {
+int Player::Handgetter() {
 	return hand;
 }
 
-int Player::getGuess() {
+int Player::Guessgetter() {
 	return guess;
 }
 
-int Player::getScore() {
+int Player::Scoregetter() {
 	return score;
 }
 
-void Player::setScore(int a) {
+void Player::Scoresetter(int a) {
 	score = a;
 }
 
-void Player::setHand(int a) {
+void Player::Handsetter(int a) {
 	hand = a;
 }
 
-void Player::setGuess(int a) {
+void Player::Guesssetter(int a) {
 	guess = a;
 }
 
@@ -28,7 +28,7 @@ void Player::incrScore() {
 	score++;
 }
 
-void HumanPlayer::chooseHand(int a) {
+void HPlayer::plHand(int a) {
 	int input, state = 0;
 	int arr[3] = { 1, 2, 5 };
 	int set[3] = { 0, 0, 0 };
@@ -78,7 +78,7 @@ void HumanPlayer::chooseHand(int a) {
 	}
 }
 
-void HumanPlayer::guessHand(int a) {
+void HPlayer::plGuess(int a) {
 	int input, state = 0;
 	int arr[8] = { 0, 1, 2, 3, 5, 6, 7, 8 };
 	while (true) {
@@ -99,7 +99,7 @@ void HumanPlayer::guessHand(int a) {
 	}
 }
 
-void ComputerPlayer::generateHand(int a) {
+void CPlayer::cpHand(int a) {
 	system("cls");
 	cout << "Player " << a + 1 << " is choosing...";
 	Sleep(110);
@@ -107,7 +107,7 @@ void ComputerPlayer::generateHand(int a) {
 	hand = members[rand() % 7];
 }
 
-void ComputerPlayer::generateGuess(int a) {
+void CPlayer::cpGuess(int a) {
 	system("cls");
 	Sleep(110);
 	cout << "Player " << a + 1 << " is choosing...";

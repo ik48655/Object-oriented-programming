@@ -14,10 +14,10 @@ public:
 		npl = npl1;
 		ncpu = ncpu1;
 	}
-	void round(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu);
-	void scoreboard(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu);
-	bool isGameOver(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu);
-	void winner(vector<HumanPlayer>& pl, vector<ComputerPlayer>& cpu);
+	void round(vector<HPlayer>& pl, vector<CPlayer>& cpu);
+	void scoreboard(vector<HPlayer>& pl, vector<CPlayer>& cpu);
+	bool GameOver(vector<HPlayer>& pl, vector<CPlayer>& cpu);
+	void Winner(vector<HPlayer>& pl, vector<CPlayer>& cpu);
 };
 
 #endif

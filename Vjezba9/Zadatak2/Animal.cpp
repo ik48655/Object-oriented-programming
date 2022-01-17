@@ -2,21 +2,6 @@
 
 Animal::~Animal() {}
 
-Mosquito::Mosquito() {
-	legs = 6;
-	species = "Mosquito";
-}
-int Mosquito::getLegs() {
-	return legs;
-}
-string Mosquito::getSpecies() {
-	return species;
-}
-Mosquito::~Mosquito() {
-	legs = 0;
-	species = "";
-}
-
 Cockroach::Cockroach() {
 	legs = 6;
 	species = "Cockroach";
@@ -47,21 +32,6 @@ Eagle::~Eagle() {
 	species = "";
 }
 
-Parrot::Parrot() {
-	legs = 2;
-	species = "Parrot";
-}
-int Parrot::getLegs() {
-	return legs;
-}
-string Parrot::getSpecies() {
-	return species;
-}
-Parrot::~Parrot() {
-	legs = 0;
-	species = "";
-}
-
 Tarantula::Tarantula() {
 	legs = 8;
 	species = "Tarantula";
@@ -77,17 +47,3 @@ Tarantula::~Tarantula() {
 	species = "";
 }
 
-BlackWidow::BlackWidow() {
-	legs = 8;
-	species = "Black Widow";
-}
-int BlackWidow::getLegs() {
-	return legs;
-}
-string BlackWidow::getSpecies() {
-	return species;
-}
-BlackWidow::~BlackWidow() {
-	legs = 0;
-	species = "";
-}

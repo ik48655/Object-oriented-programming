@@ -8,6 +8,6 @@ int main() {
 	animal.push_back(new Eagle);
 	animal.push_back(new Tarantula);
 
-	counter.getSum(animal);
+	counter.SumLegs(animal);
 	counter.printSum();
 }
