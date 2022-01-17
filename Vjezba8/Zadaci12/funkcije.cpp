@@ -5,24 +5,24 @@ int timer::getHours()
 	return h;
 }
 
-int timer::getMins()
-{
-	return m;
-}
-
-double timer::getSecs()
-{
-	return s;
-}
-
 void timer::setHr(int hr)
 {
 	h = hr;
 }
 
+int timer::getMins()
+{
+	return m;
+}
+
 void timer::setMin(int min)
 {
 	m = min;
+}
+
+double timer::getSecs()
+{
+	return s;
 }
 
 void timer::setSec(double sec)
