@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "686436a8-0fcc-421b-bccf-c56414dce76b": {
+      "ProjectGuid": "686436a8-0fcc-421b-bccf-c56414dce76b",
+      "DisplayName": "Zadatak1",
+      "ColorIndex": 0
+    },
+    "af747a57-0ebc-4fc7-9975-3cdcb8dbef20": {
+      "ProjectGuid": "af747a57-0ebc-4fc7-9975-3cdcb8dbef20",
+      "DisplayName": "Zadatak2",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
