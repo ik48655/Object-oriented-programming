@@ -1,0 +1,5 @@
+﻿  main.cpp
+F:\Materijali IK\2 god 3 sem\objektno programiranje\OOP VJEZBE\Vjezba11\main\main.cpp(50,11): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+F:\Materijali IK\2 god 3 sem\objektno programiranje\OOP VJEZBE\Vjezba11\main\main.cpp(64,20): warning C4101: 'e': unreferenced local variable
+F:\Materijali IK\2 god 3 sem\objektno programiranje\OOP VJEZBE\Vjezba11\main\main.cpp(67): warning C4715: 'read': not all control paths return a value
+  main.vcxproj -> F:\Materijali IK\2 god 3 sem\objektno programiranje\OOP VJEZBE\Vjezba11\x64\Debug\main.exe

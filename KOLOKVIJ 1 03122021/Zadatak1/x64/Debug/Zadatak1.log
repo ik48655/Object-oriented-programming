@@ -1,0 +1,7 @@
+﻿  Zadatak1.cpp
+C:\Users\User\Desktop\VJEZBANJE OBJEKTNO\KOLOKVIJ 1 03122021\Zadatak1\Zadatak1.cpp(22,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\User\Desktop\VJEZBANJE OBJEKTNO\KOLOKVIJ 1 03122021\Zadatak1\Zadatak1.cpp(26,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\VJEZBANJE OBJEKTNO\KOLOKVIJ 1 03122021\Zadatak1\Zadatak1.cpp(27,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\VJEZBANJE OBJEKTNO\KOLOKVIJ 1 03122021\Zadatak1\Zadatak1.cpp(44,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\User\Desktop\VJEZBANJE OBJEKTNO\KOLOKVIJ 1 03122021\Zadatak1\Zadatak1.cpp(61): warning C4715: 'email': not all control paths return a value
+  Zadatak1.vcxproj -> C:\Users\User\Desktop\VJEZBANJE OBJEKTNO\KOLOKVIJ 1 03122021\x64\Debug\Zadatak1.exe

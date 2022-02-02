@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1aefdcbe-fa90-4ddd-91a9-6433fa450742": {
+      "ProjectGuid": "1aefdcbe-fa90-4ddd-91a9-6433fa450742",
+      "DisplayName": "Zadatak1",
+      "ColorIndex": 0
+    },
+    "b974b608-289e-4d97-9857-e5c5e4bfa09f": {
+      "ProjectGuid": "b974b608-289e-4d97-9857-e5c5e4bfa09f",
+      "DisplayName": "Zadatak2",
+      "ColorIndex": 1
+    },
+    "102de175-8603-46d7-8766-6bee9d13304f": {
+      "ProjectGuid": "102de175-8603-46d7-8766-6bee9d13304f",
+      "DisplayName": "Zadatak3",
+      "ColorIndex": 2
+    },
+    "7b9f19c4-62ee-4f3c-9d57-2688dba6a83b": {
+      "ProjectGuid": "7b9f19c4-62ee-4f3c-9d57-2688dba6a83b",
+      "DisplayName": "Zadatak4",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
